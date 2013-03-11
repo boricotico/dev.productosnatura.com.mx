@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="dockMenu.css" />
+<title>Documento sin t&iacute;tulo</title>
+</head>
+
+<body>
+hola
+    <img src='home.png' title='Favourites' alt='' />
+    <img src='images/pictures.png' title='Pictures' alt='' />
+    <img src='images/music.png' title='Music' alt='' />
+    <img src='images/videos.png' title='Videos' alt='' />
+    <img src='images/uploads.png' title='Uploads' alt='' />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.jqDock.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+  // set up the options to be used for jqDock...
+  var dockOptions =
+    { align: 'top' // horizontal menu, with expansion DOWN from a fixed TOP edge
+    , labels: true  // add labels (defaults to 'br')
+    };
+  // ...and apply...
+  $('#menu').jqDock(dockOptions);
+});
+</script>
+</body>
+</html>

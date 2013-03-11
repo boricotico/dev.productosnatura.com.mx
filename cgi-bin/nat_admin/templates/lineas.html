@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Productos Natura Mexico ::: Bien estar bien ::: <?= $va['linea'] ?> </title>
+		<meta charset="UTF-8" />
+        <meta name="description" content="Productos Natura Cosmeticos Mexico" />
+        <meta name="keywords" content="productos natura mexico, cosmeticos, $va['linea']?>" />
+		<meta name="author" content="Hypermediamexico" />
+		<!-- Style for the demo page -->
+        <link rel="stylesheet" type="text/css" href="<?= $cfg['url_css'] ?>vertical-slider/demo.css" />
+		<!-- Style of the component -->
+		<link rel="stylesheet" type="text/css" href="<?= $cfg['url_css'] ?>vertical-slider/style.css" />
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="<?= $cfg['url_css'] ?>vertical-slider/styleNoJS.css" />
+		</noscript>
+		<!-- Estilos jqDockMenu -->
+		<link rel="stylesheet" type="text/css" href="<?= $cfg['url_css'] ?>jqDockMenu/example.css" />
+		<link rel="stylesheet" type="text/css" href="<?= $cfg['url_css'] ?>jqDockMenu/dockMenu.css" />
+		<!--------------------------->
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&v2' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="<?= $cfg['url_css'] ?>estilos.css" />
+    </head>
+    <body>
+		<div class="header">
+			<!----------------- jqDockMenu --------------------------->
+			<div id='page'>
+				<div id='menu'>
+					<img src='<?= $cfg['url_images'] ?>css-dock-menu/home.png' title='Home' alt='' />
+					<img src='<?= $cfg['url_images'] ?>css-dock-menu/email.png' title='Email' alt='' />
+					<img src='<?= $cfg['url_images'] ?>css-dock-menu/calendar.png' title='Calender' alt='' />
+					<img src='<?= $cfg['url_images'] ?>css-dock-menu/portfolio.png' title='Portfolio' alt='' />
+				</div>
+			</div>
+		</div>
+		<!----------- Contenido  ---------------->
+		
+		<table align="center" width="1080" class="contenido">
+			<tr>
+				<td align="center" valign="top"><img src="/images/vertical-slider/<?= $va['header_image'] ?>.jpg"></td>
+		    </tr>
+			<tr>
+			  <td>
+			  	Home Lineas
+			  </td>
+		  </tr>
+		</table>
+		<!----------- Contenido  ---------------->
+		<div class="footer">
+			
+		</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<!-- JS jqDockMenu -->
+		<script type="text/javascript" src="<?= $cfg['url_js'] ?>jquery/jqDockMenu/jquery.jqDock.min.js"></script>
+		<script type="text/javascript" src="<?= $cfg['url_js'] ?>jquery/jqDockMenu/example.js"></script>
+		<!---------------------->
+		<script type="text/javascript">
+		
+			<!-- JS jqDockMenu -->
+			jQuery(document).ready(function($){
+				// set up the options to be used for jqDock...
+				var dockOptions =
+					{ align: 'top' // horizontal menu, with expansion DOWN from a fixed TOP edge
+					, labels: true  // add labels (defaults to 'br')
+					};
+				// ...and apply...
+				$('#menu').jqDock(dockOptions);
+			});
+			<!---------------------->
+		</script>		
+    </body>
+</html>

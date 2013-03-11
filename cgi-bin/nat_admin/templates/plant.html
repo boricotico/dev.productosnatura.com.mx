@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Productos Natura Mexico ::: Bien estar bien ::: </title>
+		<meta charset="UTF-8" />
+        <meta name="description" content="Productos Natura Cosmeticos Mexico" />
+        <meta name="keywords" content="productos natura mexico, cosmeticos" />
+		<meta name="author" content="Hypermediamexico" />
+		<!-- Style for the demo page -->
+        <link rel="stylesheet" type="text/css" href="<?= $cfg['url_css'] ?>vertical-slider/demo.css" />
+		<!-- Style of the component -->
+		<link rel="stylesheet" type="text/css" href="<?= $cfg['url_css'] ?>vertical-slider/style.css" />
+    <noscript>
+			<link rel="stylesheet" type="text/css" href="<?= $cfg['url_css'] ?>vertical-slider/styleNoJS.css" />
+		</noscript>
+		<!-- Estilos jqDockMenu -->
+		<link rel="stylesheet" type="text/css" href="<?= $cfg['url_css'] ?>jqDockMenu/example.css" />
+		<link rel="stylesheet" type="text/css" href="<?= $cfg['url_css'] ?>jqDockMenu/dockMenu.css" />
+		<!--------------------------->
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&v2' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="<?= $cfg['url_css'] ?>estilos.css" />
+    </head>
+    <body>
+		<div class="header">
+			<h1><a href="/">
+		  <img src='<?= $cfg['url_images'] ?>colores/blanco-natura-ch3.png' /></a>&nbsp;
+		   B<span>ien estar bien</span></h1>
+			<!----------------- jqDockMenu --------------------------->
+				<div id='menu'>
+					<img src='<?= $cfg['url_images'] ?>iconos/rhome.png' id="home" title='Inicio' alt='' />
+					<img src='<?= $cfg['url_images'] ?>iconos/rconsultoras.png' id="consultora"  title='Consultora' alt='' />
+					<img src='<?= $cfg['url_images'] ?>iconos/rcatalogo.png' id="catalogo" title='Catalogo' alt='' />
+					<img src='<?= $cfg['url_images'] ?>iconos/rcontacto.png' id="consultora" title='Contacto' alt='' />
+					<a href="https://www.facebook.com/pages/Consultora-Productos-Natura-Mexico/150875934944311" target="_blank">
+					<img src='<?= $cfg['url_images'] ?>iconos/rfacebook.png' id="facebook" title='' alt='' /></a>
+				</div>
+			<!----------------- jqDockMenu LEFT --------------------------->
+			  <div id='menu2'>
+			  	<img src='<?= $cfg['url_images'] ?>colores/ekos2.jpg' id='ekos' alt='' style="cursor:pointer" />
+				<img src='<?= $cfg['url_images'] ?>colores/tododia2.jpg' id='tododia' alt='' style="cursor:pointer" />
+				<img src='<?= $cfg['url_images'] ?>colores/erva doce2.jpg' id='ervadoce' alt='' style="cursor:pointer" />
+				<img src='<?= $cfg['url_images'] ?>colores/mama bebe2.jpg' id='mama-y-bebe' alt='' style="cursor:pointer" />
+				<img src='<?= $cfg['url_images'] ?>colores/nature2.jpg' id='nature' alt='' style="cursor:pointer" />
+				<img src='<?= $cfg['url_images'] ?>colores/fotoequilibrio2.jpg' id='fotoequilibrio' alt='' style="cursor:pointer" />
+				<img src='<?= $cfg['url_images'] ?>colores/plant2.jpg' id='plant' alt='' style="cursor:pointer" />				
+			  </div>
+			<!------------------------------------------------------------->	
+			<!----------------- jqDockMenu RIGHT --------------------------->
+			  <div id='menu3'>
+				<img src='<?= $cfg['url_images'] ?>colores/chronos2.jpg' id='chronos' alt='' style="cursor:pointer" />
+				<img src='<?= $cfg['url_images'] ?>colores/perfumeria2.jpg' id='perfumeria' alt='' style="cursor:pointer" />
+				<img src='<?= $cfg['url_images'] ?>colores/hombre2.jpg' id='homem' alt='' style="cursor:pointer" />
+				<img src='<?= $cfg['url_images'] ?>colores/seve2.jpg' id='seve' alt='' style="cursor:pointer" />
+				<img src='<?= $cfg['url_images'] ?>colores/creer para ver2.jpg' id='creer-para-ver' alt='' style="cursor:pointer" />
+				<img src='<?= $cfg['url_images'] ?>colores/viva2.jpg' id='viva' alt='' style="cursor:pointer" />
+				<img src='<?= $cfg['url_images'] ?>colores/una2.jpg' id='una' alt='' style="cursor:pointer" />
+			  </div>
+			<!---------------------------------------------------->	
+		</div>
+		<!----------- Contenido  ---------------->
+		<div class="titulo">
+			<h5>Natura Plant</h5>
+		</div>
+		<table align="center" width="1080" class="contenido">
+			<tr>
+				<td colspan="3" align="center" valign="top"><img src="/images/slides/7PLANT.jpg"></td>
+		    </tr>
+			<tr>
+			  <td width="25" class="texto">&nbsp;</td>
+		      <td width="1014" align="left" valign="middle" class="texto">
+			  <br>
+			  <p align="justify">
+				<?=$va['linea']?>
+			  </p>
+			  <p align="justify">
+			  <strong>Tu cabello es &uacute;nico como t&uacute;</strong><br><br>
+		        Natura Plant te ofrece tratamientos que acompañan todos tus deseos de cambio y los de tu cabello tambi&eacute;n.
+				Combinando tecnolog&iacute;a con activos naturales de alto desempeño, brinda resultados visibles desde la primera
+				aplicaci&oacute;n.</p>
+	          <br>
+			  <p align="right"><strong>Natura Plant. T&uacute; cambias, nosotros te cuidamos.</strong></p><br></td>
+		      <td width="25" class="texto">&nbsp;</td>
+		  </tr>
+		</table>
+		<!----------- Contenido  ---------------->
+		<div class="footer">
+			
+		</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<!-- JS jqDockMenu -->
+		<script type="text/javascript" src="<?= $cfg['url_js'] ?>jquery/jqDockMenu/jquery.jqDock.min.js"></script>
+		<script type="text/javascript" src="<?= $cfg['url_js'] ?>jquery/jqDockMenu/example.js"></script>
+		<!---------------------->
+		<script type="text/javascript">
+		
+			<!-- JS jqDockMenu -->
+			jQuery(document).ready(function($){
+				// set up the options to be used for jqDock...
+				<!-- JS jqDockMenu HEAD-->
+				var dockOptions =
+					{ align: 'top' // horizontal menu, with expansion DOWN from a fixed TOP edge
+					, labels: 'tc'  // add labels (defaults to 'br')
+					};
+				<!-- JS jqDockMenu LEFT -->
+				var dockOptions2 =
+					{ align: 'left' // vertical menu, with expansion LEFT/RIGHT from the center
+					, labels: 'true'  // add labels (override the 'tl' default)
+					//, inactivity: 4000 // set inactivity timeout to 4 seconds
+				};
+				<!-- JS jqDockMenu Right -->
+				var dockOptions3 =
+					{ align: 'right' // vertical menu, with expansion LEFT from a fixed RIGHT edge
+					, labels: true  // add labels (defaults to 'tl')
+				};
+
+
+				<!-- JS jqDockMenu HEAD -->
+				$('#menu').jqDock(dockOptions);
+				<!-- JS jqDockMenu LEFT -->
+				$('#menu2').jqDock(dockOptions2);
+				<!-- JS jqDockMenu Right -->
+				$('#menu3').jqDock(dockOptions3);		
+
+			});
+			<!------------------------>
+		</script>		
+    </body>
+</html>

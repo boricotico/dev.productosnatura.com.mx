@@ -1,0 +1,36 @@
+/* CSS Document */
+/**************Menu Head*************************/
+/*position and hide the menu initially - leave room for menu items to expand...*/
+#page {padding-top:-5px; padding-bottom:20px; width:100%;}
+#menu {position:absolute; top:0px; right:0; display:none;}
+/*#menu {position:absolute; top:0; left:0; width:100%; display:none;}
+/*dock styling...*/
+/*...centre the dock...*/
+menu div.jqDockWrap {margin:0 auto;}
+/*...set the cursor...*/
+#menu div.jqDock {cursor:pointer;}
+/*label styling...*/
+div.jqDockLabel {font-weight:bold; font-style:italic; white-space:nowrap; color:#000000; cursor:pointer; font-size:16px;}
+
+/**************Menu Left*************************/
+/*position and hide the menu initially - leave room for the menu to expand...*/
+#description2 {margin-left:150px; width:510px;}
+#page2 {padding:15px 0; width:100%;}
+#menu2 {position:absolute; top:40px; left:51px; display:none;}
+/*dock styling...*/
+/*...set the cursor...*/
+#menu div.jqDock2 {cursor:pointer;}
+/*label styling...*/
+/*div.jqDockLabel2 {padding-bottom:8px; font-weight:bold; white-space:nowrap; color:#ffff00; cursor:pointer;}*/
+
+/**************Menu Right*************************/
+/*position and hide the menu initially - leave room for menu items to expand...*/
+#description3 {margin-left:40px; width:500px;}
+#page3 {padding:15px 0; width:100%;}
+#menu3 {position:absolute; top:40px; left:100%; margin-left:-98px; display:none;}
+/*dock styling...*/
+/*...set the cursor...*/
+#menu div.jqDock3 {cursor:pointer;}
+/*label styling...*/
+/*div.jqDockLabel {font-weight:bold; font-style:italic; white-space:nowrap; color:#ffffff; cursor:pointer;}*/
+

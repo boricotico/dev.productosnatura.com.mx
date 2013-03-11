@@ -1,0 +1,12 @@
+RewriteEngine on
+Options +FollowSymlinks
+
+RewriteRule ^conoce-natura/(.*)$     index.php?cmd=page&fname=lineas&sl=$1
+RewriteRule ^consultora-natura-mexico     index.php?cmd=page&fname=consultora
+#RewriteRule ^comprar-productos-natura-mexico/(\d{4})/[a-zA-Z]+/[a-zA-Z]+/[a-zA-Z0-9\-]+/*$     index.php?cmd=page&fname=producto&asin=$1
+RewriteRule ^comprar-productos-natura-mexico/(\d{4,5})/.+     index.php?cmd=page&fname=producto&asin=$1
+RewriteRule ^contactanos/(.*)$     index.php?cmd=page&fname=contacto
+RewriteRule ^comprar-productos-natura-mexico/*$     index.php?cmd=page&fname=catalogo
+RewriteRule ^comprar-productos-natura-mexico/(.*)/(.*)$     index.php?cmd=page&fname=linea_completa&ln=$1&sln=$2
+
+

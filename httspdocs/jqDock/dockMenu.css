@@ -1,0 +1,12 @@
+/* CSS Document */
+
+/*position and hide the menu initially - leave room for menu items to expand...*/
+#page {padding-top:150px; padding-bottom:20px; width:100%;}
+#menu {position:absolute; top:0; left:0; width:100%; display:none;}
+/*dock styling...*/
+/*...centre the dock...*/
+#menu div.jqDockWrap {margin:0 auto;}
+/*...set the cursor...*/
+#menu div.jqDock {cursor:pointer;}
+/*label styling...*/
+div.jqDockLabel {font-weight:bold; font-style:italic; white-space:nowrap; color:#ffffff; cursor:pointer;}

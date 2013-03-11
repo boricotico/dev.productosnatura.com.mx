@@ -1,0 +1,65 @@
+.contenido{
+	position:relative;
+	width:1000px;;
+	margin-top:100px;
+	background-color:#FFFFFF;
+	border: 1px solid #CCC;
+
+}
+
+.texto{
+	font-size:15px;
+	color:#2f2f2f;
+}
+
+.textoClaro{
+	font-size:15px;
+	color:#FECB89;
+}
+
+.titulo {
+	position:absolute;
+	left:80px;
+	top:40px;
+	width:650px;
+	height:5px;
+}
+
+.subtitulo{
+	font-size: 20px;
+	color:#2f2f2f;
+}
+
+.texto2{
+	font-size: 18px;
+	color:#2f2f2f;
+}
+
+#lineas {
+	position:absolute;
+	left:280px;
+	top:300px;
+	width:250px;
+	height:5px;
+	font-size:18px;
+	color:#2f2f2f;
+}
+
+.textoch{
+	font-size:13px;
+	color:#2f2f2f;
+}
+
+/* Captcha */
+#capcha div {
+    float: left;
+	text-align:center;
+} 
+
+#fondo div{
+	background:transparent url(/images/vertical-slider/prev.png) no-repeat;
+	background-image: url($cfg['url_images'] ?>img.png);
+	position:absolute;
+	left:280px;
+	top:10px;
+}

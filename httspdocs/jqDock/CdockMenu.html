@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Example jqDock</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel='stylesheet' type='text/css' href='example.css' />
+<script type='text/javascript' src='http://code.jquery.com/jquery-latest.min.js'></script>
+<script type='text/javascript' src='jquery.jqDock.min.js'></script>
+<script type='text/javascript' src='example.js'></script>
+<style type='text/css'>
+	/*position and hide the menu initially - leave room for menu items to expand...*/
+	#page {padding-top:150px; padding-bottom:20px; width:100%;}
+	#menu {position:absolute; top:0; left:0; width:100%; display:none;}
+/*dock styling...*/
+	/*...centre the dock...*/
+	#menu div.jqDockWrap {margin:0 auto;}
+	/*...set the cursor...*/
+	#menu div.jqDock {cursor:pointer;}
+/*label styling...*/
+	div.jqDockLabel {font-weight:bold; font-style:italic; white-space:nowrap; color:#ffffff; cursor:pointer;}
+</style>
+<script type='text/javascript'>
+jQuery(document).ready(function($){
+	// set up the options to be used for jqDock...
+	var dockOptions =
+		{ align: 'top' // horizontal menu, with expansion DOWN from a fixed TOP edge
+		, labels: true  // add labels (defaults to 'br')
+		};
+	// ...and apply...
+	$('#menu').jqDock(dockOptions);
+});
+</script>
+</head>
+<body>SIIIIII
+	<div id='page'>
+		<div id='menu'>
+			<img src='home.png' title='Favourites' alt='' />
+			<img src='email.png' title='Pictures' alt='' />
+			<img src='calendar.png' title='Music' alt='' />
+			<img src='portfolio.png' title='Videos' alt='' />
+		</div>
+	</div>
+</body>
+</html>
